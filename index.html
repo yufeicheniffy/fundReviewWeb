@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>基金从业资格考试备考</title>
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+<body>
+<header>
+    <div id="logo"><span>Fund Exam</span></div>
+    <nav>
+        <ul>
+            <li><a class='links' href="index.html">主页</a></li>
+            <li><a class='links' href="exercise.html">历史题目</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div id="exercise" class="displayWindow">
+        <div id="exerciseBody"><img width="100%" src="exercise/3-11-Q1.png" alt=""></div>
+        <button id="checkAnswer" class="clickButton">查看答案</button>
+        <div id="exerciseAnswer" style="display: none"><img width="100%" src="exercise/3-11-A1.png" alt=""></div>
+        <script>
+            let answerButton=document.querySelector("#checkAnswer");
+            let flag=0;
+            answerButton.onclick=function () {
+                let answerImg=document.querySelector("#exerciseAnswer");
+                if(flag===0){
+                    answerImg.style="display:block;";
+                    flag=1;
+                }else {
+                    answerImg.style = "display:none;";
+                    flag = 0;
+                }
+            }
+        </script>
+    </div>
+    <div id="historyBar" class="displayWindow">
+        <ul id="exerciseList">
+            <li>最近一周题目:</li>
+            <script>
+                function getBeforedays(date,i){
+                    return date-1000*60*60*24*i;
+                }
+                let exerciseList=document.querySelector("#exerciseList");
+                for(let i=0;i<7;i++){
+                    let liTag=document.createElement("li");
+                    let date= new Date(getBeforedays(Date.now(),i));
+                    console.dir(date);
+                    let day= date.getDate();
+                    console.log(day)
+                    let month=date.getMonth()+1;
+                    liTag.textContent=month+'月'+day+'日';
+                    exerciseList.appendChild(liTag);
+                }
+            </script>
+            <li><a class='links blacklink' href="exercise.html">更多题目</a></li>
+        </ul>
+    </div>
+    <div id="links" class="displayWindow">
+        <ul>
+            <li><a class="links blacklink" href="http://baoming.amac.org.cn:10080/CZSB30-Site/#/default/login
+" target="_blank">考试官网</a></li>
+            <li><a class="links blacklink" href="https://zhuanlan.zhihu.com/p/34642687
+" target="_blank">考试简介及备考建议</a></li>
+            <li><a class="links blacklink" href="https://pan.baidu.com/s/17MWwnNZSYPYR7O3YlRoUqA
+" target="_blank">电子版教材（非最新版）</a></li>
+            <li>提取码：tsdi</li>
+        </ul>
+    </div>
+</main>
+</body>
+</html>
