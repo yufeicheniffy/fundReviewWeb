@@ -75,7 +75,8 @@ main{
     padding: 0.3rem;
 }
 .clickButton{
-    padding: 0.3rem;
+    padding: 1rem 2rem;
+    font-size: 2rem;
     font-weight: bold;
     box-shadow: none;
     border: solid 1px black;
