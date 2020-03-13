@@ -17,23 +17,18 @@
 </header>
 <main>
     <div id="exercise" class="displayWindow">
-        <div id="exerciseBody"><img width="100%" src="exercise/3-11-Q1.png" alt=""></div>
-        <button id="checkAnswer" class="clickButton">查看答案</button>
-        <div id="exerciseAnswer" style="display: none"><img width="100%" src="exercise/3-11-A1.png" alt=""></div>
-        <script>
-            let answerButton=document.querySelector("#checkAnswer");
-            let flag=0;
-            answerButton.onclick=function () {
-                let answerImg=document.querySelector("#exerciseAnswer");
-                if(flag===0){
-                    answerImg.style="display:block;";
-                    flag=1;
-                }else {
-                    answerImg.style = "display:none;";
-                    flag = 0;
-                }
-            }
-        </script>
+        <div id="exerciseBody">今日题目：<br/><span id="exerciseText"></span></div>
+        <form id = "examBox">
+        <div id="exerciseChoice">
+                <input id="choice1" class='answerChoiceButton' type="radio" value="0" name="questionAnswer">A:<label class="choiceText"></label>
+                <input id="choice2" class='answerChoiceButton' type="radio" value="1" name="questionAnswer">B:<label class="choiceText"></label>
+                <input id="choice3" class='answerChoiceButton' type="radio" value="2" name="questionAnswer">C:<label class="choiceText"></label>
+                <input id="choice4" class='answerChoiceButton' type="radio" value="3" name="questionAnswer">D:<label class="choiceText"></label>
+       </div>
+        <button type="submit" id="checkAnswer" class="clickButton">提交答案</button>
+        </form>
+        <div id="exerciseAnswer" style="display: none"><div id="exerciseExplain">解析：</div></div>
+        <script src="JS/examBox.js"></script>
     </div>
     <div id="historyBar" class="displayWindow">
         <ul id="exerciseList">
@@ -46,9 +41,7 @@
                 for(let i=0;i<7;i++){
                     let liTag=document.createElement("li");
                     let date= new Date(getBeforedays(Date.now(),i));
-                    console.dir(date);
                     let day= date.getDate();
-                    console.log(day)
                     let month=date.getMonth()+1;
                     liTag.textContent=month+'月'+day+'日';
                     exerciseList.appendChild(liTag);

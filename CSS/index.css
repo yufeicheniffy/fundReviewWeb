@@ -2,6 +2,7 @@
     padding:0;
     margin:0;
     box-sizing: border-box;
+    font-size: 2rem;
 }
 ul{
     list-style: none;
@@ -68,6 +69,11 @@ main{
     flex-direction: column;
     align-items: center;
 }
+#examBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 #links{
     width:95%
 }
@@ -88,4 +94,13 @@ main{
 }
 .clickButton:hover{
     background-color: grey;
+}
+#exerciseBody{
+    margin: 3rem 1rem;
+}
+.answerChoiceButton{
+    margin: 3rem;
+    -ms-transform: scale(5); /* IE 9 */
+    -webkit-transform: scale(5); /* Chrome, Safari, Opera */
+    transform: scale(5);
 }
