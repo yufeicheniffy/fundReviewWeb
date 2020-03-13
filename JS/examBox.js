@@ -27,7 +27,8 @@ getJson("exercise/exerciseDate1.txt").then(function (data) {
         choiceButtons[i].textContent=todayExcerciseDate["questionAnswers"][i];
     }
     let examBox=document.querySelector("#examBox");
-    examBox.addEventListener("submit",function(){
+    let checkAnswerButton=document.querySelector("#checkAnswer");
+    checkAnswerButton.addEventListener("click",function(){
         let data = new FormData(examBox);
         let exerciseAnswer=document.querySelector("#exerciseAnswer");
         let exerciseExplain=document.querySelector("#exerciseExplain")
@@ -35,11 +36,9 @@ getJson("exercise/exerciseDate1.txt").then(function (data) {
            if(entry[1]==todayExcerciseDate["correctAnswer"]){
                exerciseAnswer.textContent="正确！"+todayExcerciseDate["answerExplain"];
                exerciseAnswer.style+="color:red;";
-               exerciseExplain.textContent=todayExcerciseDate["answerExplain"];
            }else{
-               exerciseAnswer.textContent="错误！看了解析再试一次吧。"+todayExcerciseDate["answerExplain"];
+               exerciseAnswer.textContent=entry[1]+"错误！看了解析再试一次吧。"+todayExcerciseDate["answerExplain"];
                exerciseAnswer.style+="color:green;";
-               exerciseExplain.textContent=todayExcerciseDate["answerExplain"];
            }
         };
         exerciseAnswer.style+="display:block;";
