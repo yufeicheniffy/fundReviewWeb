@@ -30,6 +30,8 @@ function loadHistory(exerciseDate){
 }
 
 function changeQuestion(question){
+    let exerciseAnswer=document.querySelector("#exerciseAnswer");
+    exerciseAnswer.innerHTML=''
     let exerciseText = document.querySelector("#exerciseText");
     exerciseText.textContent=question["questionText"];
     let choiceButtons = document.querySelectorAll(".choiceText");
@@ -40,8 +42,6 @@ function changeQuestion(question){
     let checkAnswerButton=document.querySelector("#checkAnswer");
     checkAnswerButton.addEventListener("click",function(){
         let data = new FormData(examBox);
-        let exerciseAnswer=document.querySelector("#exerciseAnswer");
-        let exerciseExplain=document.querySelector("#exerciseExplain")
         for (const entry of data) {
             if(entry[1]==question["correctAnswer"]){
                 exerciseAnswer.innerHTML="正确！"+"<div id=\"exerciseExplain\">解析："+question["answerExplain"]+"</div>";
