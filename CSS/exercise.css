@@ -1,0 +1,26 @@
+main{
+    display: flex;
+    flex-direction: column;
+    }
+#historyBar{
+    font-size: 1.5rem;
+    width: 95%;
+    border: solid 1px black;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+
+}
+.historyLink{
+    padding: 10px;
+}
+
+.historyLink:hover{
+    color: white;
+    background-color: grey;
+}
+
+.historyLink:focus{
+    color: white;
+    background-color: grey;
+}

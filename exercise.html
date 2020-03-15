@@ -2,9 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/exercise.css">
     <title>Title</title>
 </head>
 <body>
-
+<header>
+    <div id="logo"><span>Fund Exam</span></div>
+    <nav>
+        <ul>
+            <li><a class='links' href="index.html">主页</a></li>
+            <li><a class='links' href="exercise.html">历史题目</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <script src="JS/getJson.js"></script>
+    <div id="exercise" class="displayWindow">
+        <div id="exerciseBody">题目：<br/><span id="exerciseText"></span></div>
+        <form id="examBox">
+            <div id="exerciseChoice">
+                <input id="choice1" class='answerChoiceButton' type="radio" value="0" name="questionAnswer">A:<label
+                    class="choiceText"></label>
+                <input id="choice2" class='answerChoiceButton' type="radio" value="1" name="questionAnswer">B:<label
+                    class="choiceText"></label>
+                <br/>
+                <input id="choice3" class='answerChoiceButton' type="radio" value="2" name="questionAnswer">C:<label
+                    class="choiceText"></label>
+                <input id="choice4" class='answerChoiceButton' type="radio" value="3" name="questionAnswer">D:<label
+                    class="choiceText"></label>
+            </div>
+        </form>
+        <button id="checkAnswer" class="clickButton">提交答案</button>
+        <div id="exerciseAnswer" style="display: none">
+            <div id="exerciseExplain">解析：</div>
+        </div>
+        <script src="JS/examBox.js"></script>
+    </div>
+    <div id="historyBar">
+    </div>
+</main>
 </body>
 </html>
