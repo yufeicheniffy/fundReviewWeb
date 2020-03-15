@@ -9,18 +9,20 @@ main{
     margin: 10px;
     display: flex;
     flex-direction: row;
-
+    background-color: lightblue;
+    border-radius: 1rem;
 }
 .historyLink{
     padding: 10px;
+    border-radius: 1rem;
 }
 
 .historyLink:hover{
     color: white;
-    background-color: grey;
+    background-color: #6572f7;
 }
 
 .historyLink:focus{
     color: white;
-    background-color: grey;
+    background-color: #6572f7;
 }
