@@ -49,6 +49,29 @@ var exerciseDate=[
         ],
         questionNumber:1,
     },
+    {
+        date: new Date(2020,2,16),
+        questions:[
+            {
+                questionText:"关于基金分类标准，下列说法不正确的是：",
+                questionAnswers:['50%以上的基金资产投资于股票的为股票基金','80%以上的基金资产投资于债券的为债券基金','以货币市场工具为投资对象的为货币市场基金','同时以股票和债券为投资对象的为混合基金'],
+                correctAnswer:0,
+                answerExplain:"80%以上的基金资产投资于股票的为股票基金。80%以上的基金资产投资于债券的为债券基金。" },
+        ],
+        questionNumber:1,
+    },
+    {
+        date: new Date(2020,2,17),
+        questions:[
+            {
+                questionText:"在日常运作中，目前我国基金管理公司按照（）的规定管理基金资产",
+                questionAnswers:['公司章程','基金托管协议','基金合同','发起人协议'],
+                correctAnswer:2,
+                answerExplain:"基金管理人是基金产品的募集者和管理者，其主要职责是根据基金合同的规定，负责基金资产的投资及运作，在有效控制风险的基础下为基金投资者争取最大投资收益。" },
+        ],
+        questionNumber:1,
+    },
+
 ]
 
 var fs = require('fs');
