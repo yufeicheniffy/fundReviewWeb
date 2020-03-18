@@ -77,7 +77,7 @@ var exerciseDate=[
             {
                 questionText:"根据《证券投资基金法》，不属于基金托管人职责的是（）",
                 questionAnswers:['募集资金','资产保管','资产清算、核算','投资运作监督'],
-                correctAnswer:2,
+                correctAnswer:0,
                 answerExplain:"募集资金不是基金托管人的职责。" },
         ],
         questionNumber:1,
