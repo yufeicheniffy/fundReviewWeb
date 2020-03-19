@@ -82,6 +82,17 @@ var exerciseDate=[
         ],
         questionNumber:1,
     },
+    {
+        date: new Date(2020,2,19),
+        questions:[
+            {
+                questionText:"交易是实现基金经理投资决策的最后环节，为了避免决策的随意性和道德风险，应该实行决策人和执行人的分离，其具体含义是（）",
+                questionAnswers:['基金经理不得向交易员直接下达交易指令或者直接进行交易','投资指令必须经董事会讨论后才能确定','基金投资人不可以向基金经理下达指令','基金公司不得向基金经理下达指令'],
+                correctAnswer:0,
+                answerExplain:"考察基金经理如何管理基金。" },
+        ],
+        questionNumber:1,
+    },
 
 ]
 
