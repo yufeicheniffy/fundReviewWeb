@@ -93,6 +93,17 @@ var exerciseDate=[
         ],
         questionNumber:1,
     },
+    {
+        date: new Date(2020,2,20),
+        questions:[
+            {
+                questionText:"如果封闭式基金募集期满后不能成立，则基金管理人需要在（）日内返还投资者已缴纳的款项，并加记银行同期存款利息。",
+                questionAnswers:['7','10','20','30'],
+                correctAnswer:3,
+                answerExplain:"基金管理人需要在30日内返还投资者已缴纳的款项" },
+        ],
+        questionNumber:1,
+    },
 
 ]
 
