@@ -11,6 +11,7 @@ main{
     flex-direction: row;
     background-color: lightblue;
     border-radius: 1rem;
+    flex-wrap: wrap;
 }
 .historyLink{
     padding: 10px;

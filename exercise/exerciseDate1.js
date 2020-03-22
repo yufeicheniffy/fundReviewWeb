@@ -104,6 +104,17 @@ var exerciseDate=[
         ],
         questionNumber:1,
     },
+    {
+        date: new Date(2020,2,22),
+        questions:[
+            {
+                questionText:"基金监管从内容上讲，不包括（）",
+                questionAnswers:['对基金信息披露的监管','对基金服务机构的监管','对基金运作的监管','对基金高级管理人员的监管'],
+                correctAnswer:0,
+                answerExplain:"包括对基金服务机构、基金运作、基金高级管理人员的监管。" },
+        ],
+        questionNumber:1,
+    },
 
 ]
 
