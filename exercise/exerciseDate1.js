@@ -126,6 +126,17 @@ var exerciseDate=[
         ],
         questionNumber:1,
     },
+    {
+        date: new Date(2020,2,24),
+        questions:[
+            {
+                questionText:"合规风险的主要种类不包括（）",
+                questionAnswers:['投资合规风险','销售合规风险','信息披露合规风险','操作合规风险'],
+                correctAnswer:3,
+                answerExplain:"合规风险的主要种类包括（1）投资合规风险 （2）销售合规风险 （3）信息披露合规风险 （4）反洗钱合规风险" },
+        ],
+        questionNumber:1,
+    },
 
 ]
 
