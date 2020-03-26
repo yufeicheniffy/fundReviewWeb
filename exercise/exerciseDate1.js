@@ -148,6 +148,17 @@ var exerciseDate=[
         ],
         questionNumber:1,
     },
+    {
+        date: new Date(2020,2,26),
+        questions:[
+            {
+                questionText:"在基金募集和运作过程中，富有信息披露义务的当事人不包括（）",
+                questionAnswers:['基金托管人','基金管理人','召集基金份额持有人大会的基金份额持有人','基金监管机构'],
+                correctAnswer:3,
+                answerExplain:"考察在基金募集和运作过程中，富有信息披露义务的当事人" },
+        ],
+        questionNumber:1,
+    },
 
 ]
 
