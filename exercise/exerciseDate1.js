@@ -141,8 +141,8 @@ var exerciseDate=[
         date: new Date(2020,2,25),
         questions:[
             {
-                questionText:"ETF在一级市场上，通常只有基金份额达到（）以上的投资者在交易时间内可以随时进行赎回和申购。",
-                questionAnswers:['100万份','80万份','50万份','30万份'],
+                questionText:"目前，我国ETF的最小申购和赎回单位一般为（）",
+                questionAnswers:['70万份','50万份','30万份','50万份或100万份'],
                 correctAnswer:3,
                 answerExplain:"考点为ETF与LOF的区别。" },
         ],
