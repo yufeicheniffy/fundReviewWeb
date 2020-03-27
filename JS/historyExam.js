@@ -1,6 +1,7 @@
 getJson("exercise/exerciseDate1.txt").then(function (data) {
+    let today = new Date(Date.now());
     let exerciseDate=JSON.parse(data);
-    changeQuestion(exerciseDate[exerciseDate.length-1]["questions"][0]);
-    loadHistory(exerciseDate);
-    bindListenerForHistoryLink(exerciseDate);
+    getTodayQues(today,exerciseDate);
+    loadHistory(today,exerciseDate);
+    bindListenerForHistoryLink(today,exerciseDate);
 })
