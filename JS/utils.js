@@ -17,28 +17,38 @@ const getJson=function(url){
     })
 }
 
-function bindListenerForHistoryLink(date){
-    let questionLinks = document.querySelectorAll(".historyLink");
-    questionLinks.forEach(function (item,index) {
-        item.addEventListener('click',function(){
-            changeQuestion(date[date.length-index-1]["questions"][0]);
-        })
-    })
-
+function bindListenerForHistoryLink(today,exerciseDate){
+    let questionLinks = Array.from(document.querySelectorAll(".historyLink"));
+    let indexE = exerciseDate.length;
+    let j = 0 ;
+    for(let i = indexE-1;i>=0;i--){
+        let ques = exerciseDate[i]
+        let date = new Date(ques["date"])
+        if(date<=today) {
+            questionLinks[j].addEventListener('click',()=>{
+                changeQuestion(exerciseDate[i]["questions"][0]);
+            });
+            j+=1;
+        }
+    }
 }
-function loadHistory(exerciseDate){
+
+function loadHistory(today,exerciseDate){
+    let indexE = exerciseDate.length;
     let historyBar=document.querySelector("#historyBar")
     let totalN = exerciseDate.length;
-    exerciseDate.forEach(function(item,index){
-        let ques = exerciseDate[totalN-index-1]
+    for(let i = indexE-1;i>=0;i--){
+        let ques = exerciseDate[i]
         let date = new Date(ques["date"])
-        let day = date.getDate();
-        let month = date.getMonth()+1;
-        let questionElement = document.createElement('div');
-        questionElement.classList.add("historyLink")
-        questionElement.innerHTML=month+'月'+day+'日';
-        historyBar.appendChild(questionElement);
-    })
+        if(date<=today) {
+            let day = date.getDate();
+            let month = date.getMonth() + 1;
+            let questionElement = document.createElement('div');
+            questionElement.classList.add("historyLink")
+            questionElement.innerHTML = month + '月' + day + '日';
+            historyBar.appendChild(questionElement);
+        }
+    }
 }
 
 function changeQuestion(question){
@@ -66,4 +76,18 @@ function changeQuestion(question){
         exerciseAnswer.style+="display:block;";
         event.preventDefault()
     },false)
+}
+
+function getTodayQues(today,exerciseDate){
+    console.log(today)
+    let indexE = exerciseDate.length;
+    for(let i = indexE-1;i>=0;i--){
+        let exercise = exerciseDate[i];
+        let question = exercise["questions"][0];
+        let exerciseDay = new Date(exercise['date']);
+        if(exerciseDay<=today){
+            changeQuestion(question);
+            break;
+        }
+    }
 }
