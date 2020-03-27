@@ -1,9 +1,21 @@
-getJson("exercise/exerciseDate1.txt").then(function (data) {
-    let exerciseDate=JSON.parse(data);
-    changeQuestion(exerciseDate[exerciseDate.length-1]["questions"][0]);
-    loadHistory(exerciseDate);
-    bindListenerForHistoryLink(exerciseDate);
-})
+const getJson=function(url){
+    return new Promise(function (resolve,reject){
+        const handler = function(){
+            if(this.readyState===4){
+                if(this.status>=200 && this.status<400){
+                    resolve(this.response);
+                }else{
+                    console.log(this.status)
+                    reject(new Error(this.statusText+this.readyState));
+                }
+            }
+        }
+        const client = new XMLHttpRequest();
+        client.open("GET",url);
+        client.onreadystatechange = handler;
+        client.send();
+    })
+}
 
 function bindListenerForHistoryLink(date){
     let questionLinks = document.querySelectorAll(".historyLink");
