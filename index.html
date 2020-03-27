@@ -29,29 +29,19 @@
         </form>
         <button id="checkAnswer" class="clickButton">提交答案</button>
         <div id="exerciseAnswer" style="display: none"><div id="exerciseExplain">解析：</div></div>
-        <script src="JS/getJson.js"></script>
-        <script src="JS/examBox.js"></script>
+        <script src="JS/utils.js"></script>
+        <script>
+            getJson("exercise/exerciseDate2.txt").then(function (data) {
+                let exerciseData = JSON.parse(data);
+                let date = new Date(Date.now());
+                let month = date.getMonth()+1;
+                let day = date.getDate();
+                let exerciseName = "2020-"+month+"-"+day;
+                let dailyExcercise = exerciseData[exerciseName];
+                changeQuestion(dailyExcercise);
+            })
+        </script>
     </div>
-    <!--<div id="historyBar" class="displayWindow">
-        <ul id="exerciseList">
-            <li>最近一周题目:</li>
-            <script>
-                function getBeforedays(date,i){
-                    return date-1000*60*60*24*i;
-                }
-                let exerciseList=document.querySelector("#exerciseList");
-                for(let i=0;i<7;i++){
-                    let liTag=document.createElement("li");
-                    let date= new Date(getBeforedays(Date.now(),i));
-                    let day= date.getDate();
-                    let month=date.getMonth()+1;
-                    liTag.textContent=month+'月'+day+'日';
-                    exerciseList.appendChild(liTag);
-                }
-            </script>
-            <li><a class='links blacklink' href="exercise.html">更多题目</a></li>
-        </ul>
-    </div>-->
     <div id="links" class="displayWindow">
         <ul>
             <li>备考资料链接：</li>
