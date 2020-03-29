@@ -187,10 +187,46 @@ var exerciseDate=[
         date: new Date(2020,2,29),
         questions:[
             {
-                questionText:"",
-                questionAnswers:['','','',''],
+                questionText:"基金管理人应当在FOF所投资基金披露净值的（　），及时披露FOF份额净值和份额累计净值。",
+                questionAnswers:['次日','第三日','第五日','第七日'],
                 correctAnswer:0,
-                answerExplain:"",
+                answerExplain:"本题考查基金中基金的运作规范。基金管理人应当在FOF所投资基金披露净值的次日，及时披露FOF份额净值和份额累计净值。",
+            },
+        ],
+        questionNumber:1,
+    },
+    {
+        date: new Date(2020,2,30),
+        questions:[
+            {
+                questionText:"下列属于成长型股票的是（　）。",
+                questionAnswers:['防御性股票 ','低市盈率股 ','蓝筹股 ','周期型股票 '],
+                correctAnswer:3,
+                answerExplain:"本题考查股票基金的类型。成长型股票可以进一步分为持续成长型股票、趋势增长型股票、周期型股票等。",
+            },
+        ],
+        questionNumber:1,
+    },
+    {
+        date: new Date(2020,2,31),
+        questions:[
+            {
+                questionText:"后端收费方式下，基金管理人可以选择根据投资人持有期限不同分段设置申购费，对于持有期低于（　）年的投资人，基金管理人不得免收其后端申购费。",
+                questionAnswers:['1','2','3','4'],
+                correctAnswer:2,
+                answerExplain:"本题考查开放式基金申购和赎回费用。后端收费方式下，基金管理人可以选择根据投资人持有期限不同分段设置申购费，对于持有期低于3 年的投资人，基金管理人不得免收其后端申购费。",
+            },
+        ],
+        questionNumber:1,
+    },
+    {
+        date: new Date(2020,3,1),
+        questions:[
+            {
+                questionText:"目前，法规要求在基金年度报告、半年度报告、季度报告中以（　）形式披露基金的净值表现。",
+                questionAnswers:['文字 ','图表 ','代码 ','表格 '],
+                correctAnswer:1,
+                answerExplain:"本题考查基金定期公告的内容。目前，法规要求在基金年度报告、半年度报告、季度报告中以图表形式披露基金的净值表现。",
             },
         ],
         questionNumber:1,
