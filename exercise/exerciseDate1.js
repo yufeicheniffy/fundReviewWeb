@@ -231,6 +231,90 @@ var exerciseDate=[
         ],
         questionNumber:1,
     },
+    {
+        date: new Date(2020,3,2),
+        questions:[
+            {
+                questionText:"下列投资者不能视为私募基金合格投资者的是（　）。",
+                questionAnswers:['社会保障基金','企业年金等养老基金','国有企业年金','慈善基金'],
+                correctAnswer:2,
+                answerExplain:"本题考查私募基金合格投资者。下列投资者视为私募基金合格投资者：①社会保障基金、企业年金等养老基金，慈善基金等社会公益基金；②依法设立并在基金业协会备案的投资计划；③投资于所管理私募基金的私募基金管理人及其从业人员；④中国证监会规定的其他投资者。",
+            },
+        ],
+        questionNumber:1,
+    },
+    {
+        date: new Date(2020,3,3),
+        questions:[
+            {
+                questionText:"关于资产管理的特征，说法错误的是（　）。",
+                questionAnswers:['资产管理的委托方为资产管理人，受托方是投资者','受托资产主要是货币等金融资产','资产管理主要通过投资于银行存款、证券、期货、基金、保险或实体企业股权等资产实现增值','资产管理人根据投资者授权，进行资产投资管理，承担受托人义务'],
+                correctAnswer:0,
+                answerExplain:"本题考查资产管理的特征。资产管理具有以下特征：（1）从参与方来看，资产管理包括委托方和受托方，委托方为投资者，受托方为资产管理人。资产管理人根据投资者授权，进行资产投资管理，承担受托人义务。（2）从受托资产来看，主要为货币等金融资产，一般不包括固定资产等实物资产；（3）从管理方式来看，资产管理主要通过投资于银行存款、证券、期货、基金、保险或实体股权等资产实现增值。",
+            },
+        ],
+        questionNumber:1,
+    },
+    {
+        date: new Date(2020,3,4),
+        questions:[
+            {
+                questionText:"中国证监会对基金市场监管的主要措施不包括（　）。",
+                questionAnswers:['检查 ','拘留 ','限制交易 ','行政处罚 '],
+                correctAnswer:1,
+                answerExplain:"本题考查中国证监会对基金市场的监管措施。中国证监会对基金市场的监管措施包括：检查、调查取证、限制交易、行政处罚。",
+            },
+        ],
+        questionNumber:1,
+    },
+    {
+        date: new Date(2020,3,5),
+        questions:[
+            {
+                questionText:"价格-收益率曲线的曲率就是债券的（　）。",
+                questionAnswers:['修正久期 ','久期 ','凸性 ','麦考利久期 '],
+                correctAnswer:2,
+                answerExplain:"本题考查凸性。价格一收益率曲线的曲率就是债券的凸性。",
+            },
+        ],
+        questionNumber:1,
+    },
+    {
+        date: new Date(2020,3,6),
+        questions:[
+            {
+                questionText:"",
+                questionAnswers:[' ',' ',' ',' '],
+                correctAnswer:1,
+                answerExplain:"",
+            },
+        ],
+        questionNumber:1,
+    },
+    {
+        date: new Date(2020,3,7),
+        questions:[
+            {
+                questionText:"",
+                questionAnswers:[' ',' ',' ',' '],
+                correctAnswer:1,
+                answerExplain:"",
+            },
+        ],
+        questionNumber:1,
+    },
+    {
+        date: new Date(2020,3,8),
+        questions:[
+            {
+                questionText:"",
+                questionAnswers:[' ',' ',' ',' '],
+                correctAnswer:1,
+                answerExplain:"",
+            },
+        ],
+        questionNumber:1,
+    },
 ]
 
 var fs = require('fs');
