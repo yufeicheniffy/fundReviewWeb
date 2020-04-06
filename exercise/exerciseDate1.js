@@ -283,10 +283,13 @@ var exerciseDate=[
         date: new Date(2020,3,6),
         questions:[
             {
-                questionText:"",
-                questionAnswers:[' ',' ',' ',' '],
+                questionText:"关于守法合规职业道德的要求，以下表述错误的是（　）。",
+                questionAnswers:[' 不负有监督职责的基金从业人员，也应当监督他人的行为是否符合法律法规的要求',
+                    ' 当不同效力级别的规范对同一行为均有规定时，基金从业人员可选择遵守宽松的规范内容 ',
+                    ' 基金从业人员应当积极配合监管机构的监管 ',
+                    ' 守法合规的前提是熟悉相关的法律法规等行为规范 '],
                 correctAnswer:1,
-                answerExplain:"",
+                answerExplain:"本题考查守法合规的内容。基金从业人员应当严格遵守法律法规等行为规范，当不同效力级别的规范对同一行为均有规定时，应选择遵守更为严格的规范。",
             },
         ],
         questionNumber:1,
@@ -295,16 +298,76 @@ var exerciseDate=[
         date: new Date(2020,3,7),
         questions:[
             {
-                questionText:"",
-                questionAnswers:[' ',' ',' ',' '],
-                correctAnswer:1,
-                answerExplain:"",
+                questionText:"TF的建仓期不超过（　）个月。",
+                questionAnswers:['1 ','2 ',' 3',' 4'],
+                correctAnswer:2,
+                answerExplain:"本题考查ETF的上市交易与申购、赎回。基金合同生效后，基金管理人应逐步调整实际组合直至达到跟踪指数要求，此过程为ETF建仓阶段，ETF的建仓期不超过3个月。",
             },
         ],
         questionNumber:1,
     },
     {
         date: new Date(2020,3,8),
+        questions:[
+            {
+                questionText:"基金管理人应于申购开始日和赎回开始日前至少（　）个工作日在至少一种证监会指定的信息披露媒体公告。",
+                questionAnswers:[' 3','5 ',' 7','10 '],
+                correctAnswer:0,
+                answerExplain:"本题考查ETF的上市交易与申购、赎回。基金管理人应于申购开始日和赎回开始日前至少3个工作日在至少一种证监会指定的信息披露媒体公告。",
+            },
+        ],
+        questionNumber:1,
+    },
+    {
+        date: new Date(2020,3,9),
+        questions:[
+            {
+                questionText:"QDII基金T日提交的有效申请，投资者应在（　）日到销售网点柜台或以销售机构规定的其他方式查询申请的确认情况。",
+                questionAnswers:['T1 ','T2 ','T3 ',' Tn'],
+                correctAnswer:2,
+                answerExplain:"本题考查QDII基金的申购和赎回。QDII基金T日提交的有效申请，投资者应在T 3日到销售网点柜台或以销售机构规定的其他方式查询申请的确认情况。",
+            },
+        ],
+        questionNumber:1,
+    },
+    {
+        date: new Date(2020,3,10),
+        questions:[
+            {
+                questionText:"申请封闭式基金份额上市交易，应当符合的条件有（　）。 I.基金合同期限为5年以上 II.基金募集金额不低于5亿元人民币 III.基金份额持有人不少于2000人 IV.基金的募集符合《证券投资基金法》规定",
+                questionAnswers:[' I、II、III ','I、II、III、IV  ',' I、IV ',' II、III、IV '],
+                correctAnswer:2,
+                answerExplain:"本题考查封闭式基金的上市与交易。申请封闭式基金份额上市交易，应当符合下列条件：（1）基金的募集符合《证券投资基金法》的规定。（2）基金合同期限为5年以上。（3）基金募集金额不低于2亿元人民币。（4）基金份额持有人不少于1000人。（5）基金份额上市交易规则规定的其他条件。",
+            },
+        ],
+        questionNumber:1,
+    },
+    {
+        date: new Date(2020,3,11),
+        questions:[
+            {
+                questionText:"关于封闭式基金账户的陈述，正确的是（　）。",
+                questionAnswers:['基金账户开户在证券登记机构办理  ','基金账户在商业银行办理  ','基金账户只能用于基金认购及交易  ','每个有效身份证件可以开立1个封闭式基金账户  '],
+                correctAnswer:0,
+                answerExplain:"本题考查封闭式基金的上市与交易。基金账户只能用于基金、国债及其他债券的认购及交易。个人投资者开立基金账户，需持本人身份证到证券注册登记机构办理开户手续。根据当前中登公司账户业务规则，每个有效证件在同一市场可以开立3个封闭式基金账户。每位投资者职能开设和使用一个资金账户。",
+            },
+        ],
+        questionNumber:1,
+    },
+    {
+        date: new Date(2020,3,12),
+        questions:[
+            {
+                questionText:"按照沪、深证券交易所公布的收费标准，我国基金交易佣金的起点（　）元，由证券公司向投资者收取。",
+                questionAnswers:['1 ','3 ','5 ','10 '],
+                correctAnswer:2,
+                answerExplain:"本题考查封闭式基金的上市与交易。按照沪、深证券交易所公布的收费标准，我国基金交易佣金起点5元，不足5元的按5元收取，由证券公司向投资者收取。",
+            },
+        ],
+        questionNumber:1,
+    },
+    {
+        date: new Date(2020,3,13),
         questions:[
             {
                 questionText:"",
