@@ -370,10 +370,95 @@ var exerciseDate=[
         date: new Date(2020,3,13),
         questions:[
             {
-                questionText:"",
-                questionAnswers:[' ',' ',' ',' '],
-                correctAnswer:1,
-                answerExplain:"",
+                questionText:"基金销售机构对于通过基金业协会资质考核并获得基金销售资格的基金销售人员，统一办理的事项不包括（　）。",
+                questionAnswers:['执业注册','后续培训','执业年检','违规处罚'],
+                correctAnswer:3,
+                answerExplain:"本题考查基金销售机构人员行为规范。基金销售机构对于通过基金业协会资质考核并获得基金销售资格的基金销售人员，统一办理执业注册、后续培训和执业年检。违规处罚不属于统一办理的事项。参见教材（下册）P157。",
+            },
+        ],
+        questionNumber:1,
+    },
+    {
+        date: new Date(2020,3,14),
+        questions:[
+            {
+                questionText:"基金从业人员在执业活动中接触到的秘密不包括（　）。",
+                questionAnswers:['法律要求披露的信息','客户资料','内幕信息','商业秘密'],
+                correctAnswer:0,
+                answerExplain:"本题考查保守秘密的内容。基金从业人员在执业活动中接触到的秘密主要包括三类：一是商业秘密；二是客户资料；三是内幕信息。参见教材（上册）P174。",
+            },
+        ],
+        questionNumber:1,
+    },
+    {
+        date: new Date(2020,3,15),
+        questions:[
+            {
+                questionText:"关于基金从业人员保守秘密职业道德要求，以下理解错误的是（　）。",
+                questionAnswers:['保守秘密是基金从业人员的一项法定义务 ','从业人员不得泄露在执业活动中所获知的内幕信息 ','举报他人违法违规行为与保密要求不冲突 ','原单位的保密制度对于已离职人员不再具有约束 '],
+                correctAnswer:3,
+                answerExplain:"本题考查保守秘密的内容。基金从业人员应当妥善保管并严格保守客户秘密，非经许可不得泄露客户资料和交易信息。且无论是在任职期间还是离职后，均不得泄露任何客户资料和交易信息。参见教材（上册）P175。",
+            },
+        ],
+        questionNumber:1,
+    },
+    {
+        date: new Date(2020,3,16),
+        questions:[
+            {
+                questionText:"（　）指不为公众所知悉的、能够带来经济利益、具有实用性并被采取保密措施的技术信息和经营信息。",
+                questionAnswers:['商业秘密','客户资料','内幕信息','绝密文件'],
+                correctAnswer:0,
+                answerExplain:"本题考查保守秘密的内容。商业秘密指不为公众所知悉的、能够带来经济利益、具有实用性并被采取保密措施的技术信息和经营信息。参见教材（上册）P174。",
+            },
+        ],
+        questionNumber:1,
+    },
+    {
+        date: new Date(2020,3,17),
+        questions:[
+            {
+                questionText:"商业秘密从机构内部治理的角度看，可以包括（　）：1.内部控制 2.投资计划 3.人事管理制度 4.工作流程 ",
+                questionAnswers:['1,2,3','2,3,4','1,3,4','1,2,4'],
+                correctAnswer:2,
+                answerExplain:"本题考查保守秘密的内容。从机构运营的角度看，可以包括对证券市场的分析报告、对某一行业的研究报告、投资组合、投资计划等；从机构内部治理的角度看，可以包括内控制度、防火墙制度、员工激励机制、人事管理制度、工作流程等。参见教材（上册）P174。",
+            },
+        ],
+        questionNumber:1,
+    },
+    {
+        date: new Date(2020,3,18),
+        questions:[
+            {
+                questionText:"社会经济基础和社会关系的不同就决定了道德的（　）。",
+                questionAnswers:['规范性','继承性','差异性','具体性'],
+                correctAnswer:3,
+                answerExplain:"本题考查道德的特征。不同的社会有不同的道德。道德是由一定的社会经济基础决定的，是一定社会关系的反映。因此，社会经济基础和社会关系的不同就决定了道德的差异性。参见教材（上册）P155。\n"
+                    ,
+            },
+        ],
+        questionNumber:1,
+    },
+    {
+        date: new Date(2020,3,19),
+        questions:[
+            {
+                questionText:"道德是建立在调整人们关系、维护社会秩序理念基础之上的，是社会认可和人们普遍接受的行为规范，具有（　）。",
+                questionAnswers:['规范性','继承性','差异性','约束性'],
+                correctAnswer:3,
+                answerExplain:"本题考查道德的特征。道德是建立在调整人们关系、维护社会秩序理念基础之上的，是社会认可和人们普遍接受的具有一般约束力的行为规范。参见教材（上册）P156。",
+            },
+        ],
+        questionNumber:1,
+    },
+    {
+        date: new Date(2020,3,20),
+        questions:[
+            {
+                questionText:"（　）是指通过受教育者自身以外的力量，对其进行职业行为规范、职业义务和责任等职业道德核心内容的教育活动。",
+                questionAnswers:['职业道德 ','道德 ','职业道德教育 ','基金职业道德修养 '],
+                correctAnswer:2,
+                answerExplain:"本题考查基金职业道德教育的内容。职业道德教育是指通过受教育者自身以外的力量，对其进行职业行为规范、职业义务和责任等职业道德核心内容的教育活动。参见教材（上册）P176。",
             },
         ],
         questionNumber:1,
